@@ -317,4 +317,3 @@ class Ambilight(LightEntity):
             self._connfail = CONNFAILCOUNT
             self.on = False
             return False
-```

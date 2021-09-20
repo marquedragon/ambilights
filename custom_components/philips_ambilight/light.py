@@ -180,7 +180,7 @@ class Ambilight(LightEntity):
     def turn_off(self, **kwargs):
         global OLD_STATE
         OLD_STATE = [self._hs[0], self._hs[1], self._brightness, self._effect]
-        self._postReq('ambilight/power', {'power':'Off'})
+        self._postReq('ambilight/power', {"power": "Off"})
         self._state = False
 		
     def getState(self):
